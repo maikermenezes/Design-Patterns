@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DesignPatternSamples.Application.Services
 {
-    class VerificarPontos
+    public interface VerificarPontos
     {
-      public Task<IEnumerable<Carteira>> Verificar(Carteira carteira);
+        Task<IEnumerable<Carteira>> Verificar(Carteira carteira);
     }
 }
